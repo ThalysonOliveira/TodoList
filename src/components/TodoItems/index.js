@@ -8,7 +8,7 @@ export default class TodoItem extends Component {
         this.delete = this.delete.bind(this)
     }
 
-    delete(key){
+    delete(key) {
         this.props.delete(key)
     }
 
@@ -18,7 +18,7 @@ export default class TodoItem extends Component {
                 <ul>
                     {this.props.lista.map((item) => {
                         return (
-                            <li onClick={()=>this.delete(item.key)} key={item.key}>{item.text}</li>
+                            <li key={item.key}>{item.text} <button onClick={() => this.delete(item.key)}>X</button></li>
                         )
                     })}
                 </ul>

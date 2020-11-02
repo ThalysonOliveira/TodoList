@@ -11,12 +11,13 @@ export default class TodoList extends Component {
     render() {
         return (
             <div>
-                <form>
+                <form onSubmit={this.addItem}>
                     <input type="text"
                             placeholder="Nova Tarefa"
                             value={this.state.tarefa}
-                            onChange={(e)=>this.setState({tarefa:e.targert.value})}
+                            onChange={(e)=>this.setState({tarefa:e.target.value})}
                             ref={(event)=>this._tarefaInput = event}/>
+                    <button type="submit">Adicionar</button>
                 </form>
             </div>
         )

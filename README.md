@@ -1,4 +1,4 @@
-<h1 align="center">Crônometro</h1>
+<h1 align="center">TodoList</h1>
 
 <p align="center">
   <a href="#-tecnologia">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;

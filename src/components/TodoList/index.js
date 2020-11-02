@@ -1,4 +1,5 @@
 import Reac, { Component } from 'react'
+import TodoItems from '../TodoItems'
 
 export default class TodoList extends Component {
     constructor(props) {
@@ -8,6 +9,14 @@ export default class TodoList extends Component {
             items: []
         }
         this.addItem = this.addItem.bind(this)
+        this.deleteItem = this.deleteItem.bind(this)
+    }
+
+    deleteItem(key){
+        let filtro = this.state.items.filter((item)=>{
+            return (item.key !== key)
+        })
+        this.setState({items: filtro})
     }
 
     addItem(e) {
@@ -33,6 +42,7 @@ export default class TodoList extends Component {
                         onChange={(e) => this.setState({ tarefa: e.target.value })}
                         ref={(event) => this._tarefaInput = event} />
                     <button type="submit">Adicionar</button>
+                    <TodoItems lista={this.state.items} delete={this.deleteItem}/>
                 </form>
             </div>
         )

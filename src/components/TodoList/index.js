@@ -1,6 +1,13 @@
 import Reac, { Component } from 'react'
 
 export default class TodoList extends Component {
+    constructor(props){
+        super(props)
+        this.state={
+            tarefa: '',
+            items: []
+        }
+    }
     render() {
         return (
             <div>

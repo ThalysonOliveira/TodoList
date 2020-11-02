@@ -37,4 +37,4 @@ Esse projeto foi desenvolvido utilizando a seguinte tecnologia:
 ## :bookmark: Sobre
 
 TodoList feito utilizando o ReactJs, feito para treinar alguns conceitos de components, props e states.
-Nesse todolist você pode crirar suas tarefas e excluir as mesmas quando finalizadas
+Nesse todolist você pode criar suas tarefas e excluir as mesmas quando finalizadas

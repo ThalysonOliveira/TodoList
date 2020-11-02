@@ -18,7 +18,7 @@ export default class TodoItem extends Component {
                 <ul>
                     {this.props.lista.map((item) => {
                         return (
-                            <li key={item.key}>{item.text} <button onClick={() => this.delete(item.key)}>X</button></li>
+                            <li key={item.key}>{item.text} <button className="btn" onClick={() => this.delete(item.key)}>X</button></li>
                         )
                     })}
                 </ul>

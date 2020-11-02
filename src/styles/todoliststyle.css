@@ -24,6 +24,10 @@ input{
     color: #fff;
  }
 
+ input:valid{
+     border-bottom-color: yellowgreen;
+ }
+
 button{
     font-size: 22px;
     border: none;

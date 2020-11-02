@@ -40,7 +40,8 @@ export default class TodoList extends Component {
                         placeholder="Nova Tarefa"
                         value={this.state.tarefa}
                         onChange={(e) => this.setState({ tarefa: e.target.value })}
-                        ref={(event) => this._tarefaInput = event} />
+                        ref={(event) => this._tarefaInput = event}
+                        required />
                     <button type="submit">Adicionar</button>
                     <TodoItems lista={this.state.items} delete={this.deleteItem}/>
                 </form>

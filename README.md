@@ -36,5 +36,5 @@ Esse projeto foi desenvolvido utilizando a seguinte tecnologia:
 <a id="sobre"></a>
 ## :bookmark: Sobre
 
-TodoList feito utilizando o ReactJs, feito para treinar alguns conceitos de components, props e states.
+TodoList feito para treinar alguns conceitos de components, props e states.
 Nesse todolist você pode criar suas tarefas e excluir as mesmas quando finalizadas
